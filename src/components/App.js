@@ -4,21 +4,21 @@ import '../styles/App.css';
 class App extends Component {
     constructor(props) {
 		super(props);
+	    this.handleClick = this.handleClick.bind(this);
 	   this.state={
 	   renderPara:false,
-	   }
-	    this.handleClick=()=> {
-	    this.setState({
-	    renderPara:true,
-	    });
-	    };
-	};
+	   };
+    }
+	handleClick() {
+		this.setState({ renderPara: true });
+	  }
+
 
     render() {
     	return(
     		<div id="main">
 		 {renderPara && <p id="para">
-          {text}
+          `Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy`
         </p>}
     {!renderPara && <button id="click" onClick={this.handleClick}>
             click me
