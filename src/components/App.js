@@ -17,10 +17,10 @@ class App extends Component {
     render() {
     	return(
     		<div id="main">
-		 {renderPara && <p id="para">
+		 {this.state.renderPara && <p id="para">
           `Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy`
         </p>}
-    {!renderPara && <button id="click" onClick={this.handleClick}>
+    {!this.state.renderPara && <button id="click" onClick={this.handleClick}>
             click me
           </button>}
 				{ /* Do not remove this main div!! */ }
