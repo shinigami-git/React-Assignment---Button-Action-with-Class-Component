@@ -18,7 +18,7 @@ class App extends Component {
     	return(
     		<div id="main">
 		 {this.state.renderPara && <p id="para">
-          `Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy`
+		{`Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy`}
         </p>}
     {!this.state.renderPara && <button id="click" onClick={this.handleClick}>
             click me
